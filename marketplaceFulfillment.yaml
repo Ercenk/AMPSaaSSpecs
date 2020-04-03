@@ -38,12 +38,6 @@ paths:
             type: string
             format: uuid
           required: false
-        - in: header
-          name: Authorization
-          description: Get a [JSON web token](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/saas-app/cpp-saas-registration#get-a-token-based-on-the-azure-ad-app), JWT, bearer token. 
-          schema:
-            type: string
-          required: true  
       responses:
         '200':
           description: OK. Gets the publisher and corresponding subscriptions for all the publisher's offers, based on the authentication token.
@@ -95,19 +89,12 @@ paths:
           schema:
             type: string
             format: uuid
-          required: false
-        - in: header
-          name: Authorization
-          description: Get a [JSON web token](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/saas-app/cpp-saas-registration#get-a-token-based-on-the-azure-ad-app), JWT, bearer token. 
-          schema:
-            type: string
-          required: true          
+          required: false        
         - in: header
           name: x-ms-marketplace-token
           description: The token query parameter in the URL when the user is redirected to the SaaS partner's website from Azure (for example,  https://contoso.com/signup?token=..). Note, The URL decodes the token value from the browser before using it. 
           schema:
             type: string
-            format: uuid
           required: false   
       responses:
         '200':
@@ -171,13 +158,7 @@ paths:
           schema:
             type: string
             format: uuid
-          required: false
-        - in: header
-          name: Authorization
-          description: Get a [JSON web token](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/saas-app/cpp-saas-registration#get-a-token-based-on-the-azure-ad-app), JWT, bearer token. 
-          schema:
-            type: string
-          required: true  
+          required: false 
       responses:
         '200':
           description: OK. Gets the SaaS subscription from identifier. 
@@ -235,13 +216,7 @@ paths:
           schema:
             type: string
             format: uuid
-          required: false
-        - in: header
-          name: Authorization
-          description: Get a [JSON web token](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/saas-app/cpp-saas-registration#get-a-token-based-on-the-azure-ad-app), JWT, bearer token. 
-          schema:
-            type: string
-          required: true  
+          required: false 
       requestBody:
         required: true
         content:
@@ -305,13 +280,6 @@ paths:
             type: string
             format: uuid
           required: false
-        - in: header
-          name: Authorization
-          description: Get a [JSON web token](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/saas-app/cpp-saas-registration#get-a-token-based-on-the-azure-ad-app), JWT, bearer token. 
-          schema:
-            type: string
-          required: true  
- 
       responses:
         '202':
           description: The partner initiated a call to unsubscribe a SaaS subscription.
@@ -367,13 +335,7 @@ paths:
           schema:
             type: string
             format: uuid
-          required: false
-        - in: header
-          name: Authorization
-          description: Get a [JSON web token](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/saas-app/cpp-saas-registration#get-a-token-based-on-the-azure-ad-app), JWT, bearer token. 
-          schema:
-            type: string
-          required: true  
+          required: false 
       responses:
         '200':
           description: OK. Gets the SaaS subscription from identifier. 
@@ -433,12 +395,6 @@ paths:
             type: string
             format: uuid
           required: false
-        - in: header
-          name: Authorization
-          description: Get a [JSON web token](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/saas-app/cpp-saas-registration#get-a-token-based-on-the-azure-ad-app), JWT, bearer token. 
-          schema:
-            type: string
-          required: true  
       requestBody:
         required: true
         content:
@@ -502,12 +458,6 @@ paths:
             type: string
             format: uuid
           required: false
-        - in: header
-          name: Authorization
-          description: Get a [JSON web token](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/saas-app/cpp-saas-registration#get-a-token-based-on-the-azure-ad-app), JWT, bearer token. 
-          schema:
-            type: string
-          required: true  
       responses:
         '200':
           description: OK. Gets the SaaS subscription from identifier. 
@@ -575,13 +525,7 @@ paths:
           schema:
             type: string
             format: uuid
-          required: false
-        - in: header
-          name: Authorization
-          description: Get a [JSON web token](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/saas-app/cpp-saas-registration#get-a-token-based-on-the-azure-ad-app), JWT, bearer token. 
-          schema:
-            type: string
-          required: true  
+          required: false 
       responses:
         '200':
           description: OK. Gets the SaaS subscription from identifier. 
@@ -648,13 +592,7 @@ paths:
           schema:
             type: string
             format: uuid
-          required: false
-        - in: header
-          name: Authorization
-          description: Get a [JSON web token](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/saas-app/cpp-saas-registration#get-a-token-based-on-the-azure-ad-app), JWT, bearer token. 
-          schema:
-            type: string
-          required: true  
+          required: false 
       requestBody:
         required: true
         content:
