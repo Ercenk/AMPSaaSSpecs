@@ -5,7 +5,7 @@ servers:
     url: https://marketplaceapi.microsoft.com/api/saas/subscriptions
 info:
   version: "2.0.0"
-  title: SaaS fulfillment APIs, version 2
+  title: SaaSFulfillment
   description: >-
     This spec details the APIs that enable partners to sell their SaaS applications in the AppSource marketplace and the Azure Marketplace. These APIs are a requirement for transactable SaaS offers on the AppSource and Azure Marketplace.
 security:
